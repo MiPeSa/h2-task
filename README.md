@@ -27,5 +27,41 @@
 
 ![Add file: sudo lshw -short -sanitize command](lshw-command.png)
 
-Komento lshw eli (List hardware), raportoi minulle raportin järjestelmän eri laitteistokomponenteista. Esimerkiksi muistikokoonpanon, läppärini prosessorin sekä sen nopeuden, emolevyn kokoonpanon, laiteohjelmistoversion, välimuistin määritykset, väylän nopeuden jne.
+Komento lshw eli (List hardware), raportoi minulle listan järjestelmän eri laitteistokomponenteista. Listan informaatio on jaoteltu taulukkoon, jossa informaatio on jaoteltu rivittäin 4 otsikon alle, jotka ovat HardWare path/Device/Class/Description. Taulukon tiedoista löytyy esimerkiksi tietoja virtuaalikoneen sekä läppärini muistista, läppärini prosessorista sekä sen nopeudesta, koneen emolevystä, virtuaalikoneen laiteohjelmistosta, jne. Ilman "-short" ja "-sanitize" komentoa lshw listasi laitteistokomponenttien tiedot paljon laajemmin, sisältäen myös arkaluonteisia tietoja komponenteista. Ilmeisesti "-short" järjestää raportin käytännölliseen taulukkoon ja "-sanitize" jättää pois arkaluonteisen datan.
 
+- c) Etsin verkosta erilaisia mielenkiintoisia komentoriviohjelmia. Valitsin seuraavat ohjelmat:
+
+## Wikit
+
+Wikit komentoriviohjelmalla pystyy hakemaan wikipediasta tietoja Linuxin komentokehotteessa. Wikit:n asennusta, sekä toimimista varten piti asentaa myös nodejs sekä npm. Asensin ne, jonka jälkeen asensin Wikit:n.
+
+        $ sudo apt-get -y install nodejs npm
+        $ sudo apt-get -y install wikit
+
+Hakeminen komentokehotteessa tapahtuu lisäämällä wikit alkuun, jonka jälkeen laitetaan hakusana, esimerkiksi näin:
+        $ wikit Linux
+lisää tähän kuva
+
+## CMatrix
+
+CMatrix komentoriviohjelma vaikutti hauskalta, joten päätin testata sitä. Asensin sen komennolla:
+        $ sudo apt-get -y install cmatrix
+Asennuksen jälkeen katsoin mitä CMatrixilla voi tehdä syöttämällä komennon 
+        $ cmatrix -help
+Komentokehotteeseen avautui lista toiminnoista.
+
+lisää tähän kuva
+
+Päätin kokeilla "cmatrix -r" eli rainbow mode.
+
+lisää kuva
+
+## Figlet
+        $ sudo apt-get -y install figlet
+
+Kolmantena ohjelmana asensin Figlet:n. Figlet on komentoriviohjelma, joka muuttaa käyttäjän syöttämät tiedot ASCII-bannereiksi. 
+
+Figlet toimii komentokehotteessa esimerkiksi syöttämällä komennon:
+
+        $ figlet "Hello World"
+lisää kuva
