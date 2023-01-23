@@ -52,7 +52,7 @@ Komentokehotteeseen avautui lista toiminnoista.
 
 Päätin kokeilla "cmatrix -r" eli rainbow mode. Alla ruutukaappaus, komentokehotteesta komennon jälkeen. Komento avasi "The Matrix" animaation.
 
-!Add file: CMatrix list](cmatrix.png)
+![Add file: CMatrix list](cmatrix.png)
 
 ### Figlet
         $ sudo apt-get -y install figlet
