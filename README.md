@@ -113,13 +113,6 @@ Hakemistosta löytyy esimerkiksi käyttäjäni tiedostot(Documents).
 
 ![Add file: boot log](boot-log.png)
 
-## History
-
-Tässä historiaa komentokehotteessa suorittamistani komennoista
-
-![Add file: history 1](history-1.png)
-![Add file: history 2](history-2.png)
-
 ## E)
 
 grep komento etsii annetusta tiedostosta rivejä, jotka sisältävät osuman annetuihin hakusanoihin tai merkkeihin. 
