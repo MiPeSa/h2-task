@@ -18,7 +18,7 @@ Asensin lshw:n
      
         $ sudo lshw apt-get -y install lshw
      
-     Suoritin aikaisemman komennon asennuksen jälkeen uudelleen, joilloin komentokehotteeseen tuli seuraava lista.
+Suoritin aikaisemman komennon asennuksen jälkeen uudelleen, joilloin komentokehotteeseen tuli seuraava lista.
 
 ![Add file: sudo lshw -short -sanitize command](lshw-command.png)
 
