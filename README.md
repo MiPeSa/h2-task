@@ -22,6 +22,10 @@
      Asensin lshw:n 
      
         $ sudo lshw apt-get -y install lshw
+     
+     Suoritin aikaisemman komennon asennuksen jälkeen uudelleen, joilloin komentokehotteeseen tuli seuraava lista.
 
 ![Add file: sudo lshw -short -sanitize command](lshw-command.png)
+
+Komento lshw eli (List hardware), raportoi minulle raportin järjestelmän eri laitteistokomponenteista. Esimerkiksi muistikokoonpanon, läppärini prosessorin sekä sen nopeuden, emolevyn kokoonpanon, laiteohjelmistoversion, välimuistin määritykset, väylän nopeuden jne.
 
