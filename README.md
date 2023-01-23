@@ -1,14 +1,5 @@
 # h2 Tehtävä
 
-
-    x) Lue ja tiivistä (Muutama ranskalainen viiva riittää. Tässä alakohdassa ei tarvitse tehdä testejä tietokoneella)
-        Karvinen 2020: Command line basics revisited (nämä komennot ja hakemistot kannattaa myös opiskella ulkoa ja harjoitella automaatiotasolle)
-    a) Micro. Asenna micro-editori
-    b) Rauta. Listaa testaamasi koneen rauta (‘sudo lshw -short -sanitize’). Asenna lshw tarvittaessa. Selitä ja analysoi listaus.
-    c) Apt. Asenna kolme itsellesi uutta komentoriviohjelmaa. Kokeile kutakin ohjelmaa sen pääasiallisessa käyttötarkoituksessa. Ota ruutukaappaus. Kaikki terminaaliohjelmat kelpaavat, TUI (text user interface) ja CLI (command line interface). Osaatko tehdä apt-get komennon, joka asentaa nämä kolme ohjelmaa kerralla?
-    d) FHS. Esittele kansiot, jotka on listattu "Command Line Basics Revisited" kappaleessa "Important directories". Näytä kuvaava esimerkki kunkin tärkeän kansion sisältämästä tiedostosta tai kansiosta. Jos kyseessä on tiedosto, näytä siitä kuvaava esimerkkirivi. Työskentele komentokehotteessa ja näytä komennot, joilla etsit esimerkit.
-    e) The Friendly M. Näytä 2-3 kuvaavaa esimerkkiä grep-komennon käytöstä. Ohjeita löytyy 'man grep' ja tietysti verkosta.
-
 ## A)
 
 Micro-editorin asennettu versio.
@@ -82,38 +73,45 @@ Verkkosivulla https://terokarvinen.com/2020/command-line-basics-revisited/?fromS
 
 / eli root(juurihakemisto) on koko tiedostojärjestelmän ylin osa. Root sisältää tiedostojärjestelmän kaikki hakemistot. / (root) hakemisto sisältää esimerkiksi /usr kansion, joka sisältää käyttäjiin liittyvät ohjelmat.
 
-lisää kuva 
+![Add file: usr](usr-directories.png)
 
 ## /home/
 
 /home/ kansio sisältää kaikkien käyttäjien kotihakemistot. Virtuaalikoneessani on vain yksi eli oma käyttäjäni, hakemisto vie minut oman käyttäjäni kotihakemistoon.
 
-lisää kuva
+![Add file: home](home-directory.png)
 
 ## /home/miikkas
 
 /home/miikkas on käyttäjäni kotihakemisto. Tämä hakemisto on ainoa paikka, jossa nimenomaan käyttäjälläni "miikkas" voi tallentaa tietoja pysyvästi.
 Hakemistosta löytyy esimerkiksi käyttäjäni tiedostot(Documents).
 
-lisää kuva
+![Add file: home user](home-user-directory.png)
 
 ## /etc/
 
 /etc/ kansio sisältää kaikki järjestelmän asetukset. Asetukset ovat luettavissa tekstitiedostoina. /etc/ löytyy root hakemiston alta, sillä sen edessä on vain / eli root hakemiston merkki. Avasin esimerkiksi /etc/ hakemistosta "os-release" tiedoston.
 
-lisää kuva
+![Add file: etc](etc-os-release.png)
 
 ## /media/
 
 /media/ sisältää poistettavissa olevat mediat. /media kansiossa oli vain oman käyttäjäni kansio, joka oli tyhjä, mutta media kansiossa voisi olla esimerkiksi usb muistitikun mediat.
 
-lisää kuva
+![Add file: media](media.png)
 
 ## /var/log/
 
 /var/log/ hakemistosta löytyvät koko järjestelmän lokit. Avasin esimerkiksi lokeista boot lokin syöttämällä komennon " $ sudo cat boot.log". Lokista näkee mitä bootin aikana on tapahtunut. 
 
-lisää kuva
+![Add file: boot log](boot-log.png)
+
+## History
+
+Tässä historiaa komentokehotteessa suorittamistani komennoista
+
+![Add file: history 1](history-1.png)
+![Add file: history 2](history-2.png)
 
 ## E)
 
@@ -126,10 +124,10 @@ Ensimmäisessä esimerkissä etsin grep komennon avulla /etc/passwd tiedostoa k�
 Komento:
         $ grep miikkas /etc/passwd
 
-kuva
+![Add file: grem esimerkki 1](esim-grep-1.png)
 
 Tässä etsin grep komennolla /etc/ hakemistosta kaikista tiedostoista merkkijonoa "192.168.1.50"
 Komento:
         $ sudo grep -r "192.168.1.50" /etc/
         
- kuva
+![Add file: grem esimerkki 2](esim-grep-2.png)
