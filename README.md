@@ -11,7 +11,7 @@
 
 - a) Micro-editorin asennettu versio.
 
-![Add file: Micro version](micro.png)
+![Add file: Micro version](micro-version.png)
 
 - b)
 
