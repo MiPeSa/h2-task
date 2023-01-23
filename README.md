@@ -13,7 +13,15 @@
 
 ![Add file: Micro version](micro-version.png)
 
-- b)
+- b) Syötin komentokehotteeseen 
 
+        $ sudo lshw -short -sanitize.
+        
+     komento johti "sudo: lshw: command not found".
+     
+     Asensin lshw:n 
+     
+        $ sudo lshw apt-get -y install lshw
 
+![Add file: sudo lshw -short -sanitize command](lshw-command.png)
 
