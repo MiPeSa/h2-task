@@ -1,8 +1,15 @@
 # h2 Tehtävä
 
+## Kone
+
+Macbook Air(2015)
+macOS Monterey v. 12.6.2 
+Intel Core i5 Dual-Core 1,6 GHz prossu
+8 GB RAM
+
 ## A)
 
-Micro-editorin asennettu versio.
+Olen asentanut micron jo aikaisemmin oppitunnilla. Micro-editorin asennettu versio alla.
 
 ![Add file: Micro version](micro-version.png)
 
