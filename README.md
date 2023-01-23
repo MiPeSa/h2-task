@@ -131,3 +131,7 @@ Komento:
         $ sudo grep -r "192.168.1.50" /etc/
         
 ![Add file: grem esimerkki 2](esim-grep-2.png)
+
+## Lähteet
+
+Karvinen Tero, 2020-02-03, Luettavissa(https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited).
